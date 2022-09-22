@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #31326f;
+  --light-blue: #258aff;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --color-grey: #e3eef8;
+  --light-grey: #ccc;
+  --dark-grey: #222831;
+  --pink: #e9204f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 8rem 0;
+  /* z-index: -2; */
+}
+
+.container {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+/***The nave stlying ***/
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+}
+nav {
+  width: 100%;
+ 
+}
+
+.nav-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 28%;
+}
+
+.nav-lists ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-lists ul li {
+  margin-right: 1.6rem;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.nav-lists ul li a {
+  color: var(--white);
+  text-decoration: none;
+  position: relative;
+
+}
+
+.nav-lists ul li a:hover::before{
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: .3rem;
+  background-color: var(--pink);
+  top: 2rem;
+  left: 0rem;
+}
+
+.icons2 {
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.first-section {
+  width: 100%;
+}
+
+.img-hero {
+  width: 40%;
+  height: 10vh;
+  top: -4rem;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+}
+
+.text {
+  width: 30%;
+  position: absolute;
+  color: var(--white);
+  top: 20rem;
+  left: 20rem;
+  z-index: 1;
+}
+
+.text h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+.text a {
+  border: 2px solid var(--pink);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all .4s;
+}
+
+.text a:hover {
+  background-color: var(--pink);
+}
+
+
+.boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27rem;
+ 
+}
+
+.box {
+  width: 30%;
+  height: 33rem;
+  padding: 5rem 3rem;
+  border: 2px solid var(--dark-grey);
+  color: var(--white);
+  z-index: 1;
+  background-color: var(--dark-grey);
+  transition: all .3s;
+
+}
+
+.box i {
+  font-size: 5rem;
+  color: var(--pink);
+  margin-bottom: 1rem;
+}
+
+.box h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.box h2::before {
+  content: " ";
+  width: 6rem;
+  height: .3rem;
+  left: 0rem;
+  top: 3.5rem;
+  position: absolute;
+  background-color: var(--pink);
+
+}
+
+.box:hover,
+.current {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.box i:hover {
+  color: var(--white);
+}
+
+.main-section {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--white);
+  position: relative;
+}
+
+.serve-text h1 {
+  color: var(--black);
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 2.5rem;
+}
+
+.serve-text h4 {
+  font-size: 2rem;
+  color: var(--pink);
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.box-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-box {
+  width: 35rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid transparent;
+  background-color: var(--light-grey);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.inner-box:hover {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.inner-box i {
+  color: var(--pink);
+}
+
+
+.second-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.main-section::after {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: .2rem;
+  background-color: var(--pink);
+  top: 6rem;
+  left: 20rem;
+}
+
+
+.main-section::before {
+  content: "";
+  position: absolute;
+  width: .2rem;
+  height: 6rem;
+  background-color: var(--pink);
+  top: 50rem;
+  left: 70rem;
+}
+
+.about {
+  width: 100%;
+  
+  background-color: var(--white);
+  position: relative;
+}
+
+.text-section h1 {
+  font-size: 4rem;
+  margin-top: -3rem;
+}
+
+.text-section h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 4rem;
+}
+
+.imag-part {
+  width: 100%;
+  position: relative;
+}
+
+
+.main-f-img {
+  width: 65%;
+  position: relative;
+}
+
+.main-text {
+  position: absolute;
+  top: 40rem;
+  left: 1rem;
+  font-size: 1.6rem;
+  color: var(--white);
+}
+
+.sub-images {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0rem;
+  left: 70rem;
+}
+
+.sub-images img {
+  width: 100%;
+}
+
+.imag1 {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.imag1-text {
+  position: absolute;
+  top: 18rem;
+  left: 1rem;
+  font-size: 1.6rem;
+  color: var(--white);
+}
+
+.image2 {
+  position: relative;
+}
+
+
+.image2-text {
+  position: absolute;
+  top: 17rem;
+  left: 1rem;
+  font-size: 1.6rem;
+  color: var(--white);
+}
+
+
+.main-f-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-grey);
+  position: absolute;
+  opacity: .7;
+}
+
+.image2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-grey);
+  position: absolute;
+  opacity: .7;
+}
+
+.imag1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-grey);
+  position: absolute;
+  opacity: .7;
+}
+
+.pend-sect {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  
+}
+
+.box-one {
+  margin-right: 1rem;
+  border: 1px solid transparent;
+  text-align: start;
+  padding-left: .3rem;
+}
+
+.box-one h1{
+  font-size: 2rem;
+}
+
+.box-one p {
+  font-weight: 100;
+  color: var(--dark-grey);
+}
+
+.about-section::after {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: .2rem;
+  background-color: var(--pink);
+  top: 4rem;
+  left: 18rem;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  width: .2rem;
+  height: 6rem;
+  background-color: var(--pink);
+  top: 86rem;
+  left: 65rem;
+}
+
+
+.latest {
+  width: 100%;
+  background-color: var(--white);
+}
+
+.latest-heading {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.latest-heading h1{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.latest-heading h3 {
+  font-size: 2rem;
+  color: var(--pink);
+  margin-bottom: 2rem;
+}
+
+.designs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.design-box {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.design-text {
+  text-align: center;
+  position: absolute;
+  color: var(--white);
+  font-size: 1.6rem;
+  top: 13rem;
+}
+
+
+.design-box img {
+  width: 100%;
+}
+
+.design-box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-grey);
+  position: absolute;
+  opacity: .7;
+}
+
+.least {
+  width: 100%;
+  background-color: var(--dark-grey);
+}
+
+.least-section {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+}
+
+.least-section h1 {
+  text-transform: capitalize;
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+
+
+.least-icons {
+  font-size: 3rem;
+}
+
+.fa-facebook-f {
+  margin: .2rem;
+  border: 2px solid var(--pink);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.fa-github {
+  margin: .2rem;
+  border: 2px solid var(--pink);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+
+.fa-instagram {
+  margin: .2rem;
+  border: 2px solid var(--pink);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  margin: .2rem;
+  border: 2px solid var(--pink);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  border: 2px solid var(--pink);
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--black);
+}
+
+footer p {
+  color: var(--white);
+  text-align: center;
+  padding-top: 3rem;
+}
